@@ -37,9 +37,10 @@ function getMatchResult(player, bot) {
 }
 
 function playMatch(playerchoice, computerchoice) {
+    if (gameOver) return;
+
     playerBox.innerHTML = playerchoice;
     computerBox.innerHTML = computerchoice;
-
 
     getMatchResult(playerchoice, computerchoice);
 
